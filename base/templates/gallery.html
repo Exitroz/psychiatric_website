@@ -6,7 +6,7 @@
 
 <!--banner-->
 <div class="banner clearfix"></div>
-<div class="page-top clearfix">
+{% comment %} <div class="page-top clearfix">
     <div class="container">
         <!--page main heading-->
         <h1 class="entry-title">3 Columns Gallery</h1>
@@ -16,7 +16,7 @@
         </nav>
     </div>
 
-</div>
+</div> {% endcomment %}
 
 <div class="gallery-page clearfix">
     <div class="container">
@@ -48,13 +48,13 @@
                 <div class="isotope-item advanced-technology free-facilities col-md-4 col-sm-6 ">
                     <article class="common clearfix hentry ">
                         <figure class="overlay-effect">
-                            <a href="images/temp-images/gallery-11.jpg" title="Medical Record Keeping">
-                                <img src="images/temp-images/gallery-11-670x500.jpg"  alt="gallery-1" />
+                            <a href="{% static 'images/temp-images/gallery-11.jpg' %}" title="Medical Record Keeping">
+                                <img src="{% static 'images/temp-images/gallery-11-670x500.jpg' %}"  alt="gallery-1" />
                             </a>
-                            <a class="overlay" href="images/temp-images/gallery-11.jpg"></a>
+                            <a class="overlay" href="{% static 'images/temp-images/gallery-11.jpg' %}"></a>
                         </figure>
                         <div class="content clearfix">
-                            <h4><a href="gallery-single-record.html">Medical Record Keeping</a></h4>
+                            <h4><a href="">Medical Record Keeping</a></h4>
 
                             <div class="gallery-item-types">
                                 <a href="#">Advanced Technology</a>,
@@ -69,13 +69,13 @@
                 <div class="isotope-item free-facilities patient-care col-md-4 col-sm-6 ">
                     <article class="common clearfix hentry ">
                         <figure class="overlay-effect">
-                            <a href="images/temp-images/gallery-41.jpg" title="Blood Pressure Checkup">
-                                <img src="images/temp-images/gallery-41-670x500.jpg"  alt="gallery-4" />
+                            <a href="{% static 'images/temp-images/gallery-41.jpg' %}" title="Blood Pressure Checkup">
+                                <img src="{% static 'images/temp-images/gallery-41-670x500.jpg' %}"  alt="gallery-4" />
                             </a>
-                            <a class="overlay" href="images/temp-images/gallery-41.jpg"></a>
+                            <a class="overlay" href="{% static 'images/temp-images/gallery-41.jpg' %}"></a>
                         </figure>
                         <div class="content clearfix">
-                            <h4><a href="gallery-single-checkup.html">Blood Pressure Checkup</a></h4>
+                            <h4><a href="">Blood Pressure Checkup</a></h4>
 
                             <div class="gallery-item-types">
                                 <a href="#">Free Facilities</a>,
@@ -90,13 +90,13 @@
                 <div class="isotope-item health-counseling kids-care professional-staff col-md-4 col-sm-6 ">
                     <article class="common clearfix hentry ">
                         <figure class="overlay-effect">
-                            <a href="images/temp-images/gallery-31.jpg" title="Kids Treatment">
-                                <img src="images/temp-images/gallery-31-670x500.jpg" alt="gallery-3" />
+                            <a href="{% static 'images/temp-images/gallery-31.jpg' %}" title="Kids Treatment">
+                                <img src="{% static 'images/temp-images/gallery-31-670x500.jpg' %}" alt="gallery-3" />
                             </a>
-                            <a class="overlay" href="images/temp-images/gallery-31.jpg"></a>
+                            <a class="overlay" href="{% static 'images/temp-images/gallery-31.jpg' %}"></a>
                         </figure>
                         <div class="content clearfix">
-                            <h4><a href="gallery-single-treatment.html">Kids Treatment</a></h4>
+                            <h4><a href="">Kids Treatment</a></h4>
 
                             <div class="gallery-item-types">
                                 <a href="#">Health Counseling</a>,
@@ -112,13 +112,13 @@
                 <div class="isotope-item health-counseling patient-care col-md-4 col-sm-6 ">
                     <article class="common clearfix hentry ">
                         <figure class="overlay-effect">
-                            <a href="images/temp-images/gallery-5.jpg" title="Health Counseling">
-                                <img  src="images/temp-images/gallery-5-670x500.jpg"  alt="gallery-5" />
+                            <a href="{% static 'images/temp-images/gallery-5.jpg' %}" title="Health Counseling">
+                                <img  src="{% static 'images/temp-images/gallery-5-670x500.jpg' %}"  alt="gallery-5" />
                             </a>
-                            <a class="overlay" href="images/temp-images/gallery-5.jpg"></a>
+                            <a class="overlay" href="{% static 'images/temp-images/gallery-5.jpg' %}"></a>
                         </figure>
                         <div class="content clearfix">
-                            <h4><a href="gallery-single-counseling.html">Health Counseling</a></h4>
+                            <h4><a href="">Health Counseling</a></h4>
 
                             <div class="gallery-item-types">
                                 <a href="#">Health Counseling</a>,
@@ -133,13 +133,13 @@
                 <div class="isotope-item advanced-technology pharmaceutical-care col-md-4 col-sm-6 ">
                     <article class="common clearfix hentry ">
                         <figure class="overlay-effect">
-                            <a href="images/temp-images/gallery-6.jpg" title="Advanced Lab">
-                                <img  src="images/temp-images/gallery-6-670x500.jpg"  alt="gallery-6" />
+                            <a href="{% static 'images/temp-images/gallery-6.jpg' %}" title="Advanced Lab">
+                                <img  src="{% static 'images/temp-images/gallery-6-670x500.jpg' %}"  alt="gallery-6" />
                             </a>
-                            <a class="overlay" href="images/temp-images/gallery-6.jpg"></a>
+                            <a class="overlay" href="{% static 'images/temp-images/gallery-6.jpg' %}"></a>
                         </figure>
                         <div class="content clearfix">
-                            <h4><a href="gallery-single-lab.html">Advanced Lab</a></h4>
+                            <h4><a href="">Advanced Lab</a></h4>
 
                             <div class="gallery-item-types">
                                 <a href="#">Advanced Technology</a>,
@@ -154,13 +154,13 @@
                 <div class="isotope-item patient-care professional-staff col-md-4 col-sm-6 ">
                     <article class="common clearfix hentry ">
                         <figure class="overlay-effect">
-                            <a href="images/temp-images/gallery-7.jpg" title="Well Trained Staff">
-                                <img src="images/temp-images/gallery-7-670x500.jpg" alt="gallery-7" />
+                            <a href="{% static 'images/temp-images/gallery-7.jpg' %}" title="Well Trained Staff">
+                                <img src="{% static 'images/temp-images/gallery-7-670x500.jpg' %}" alt="gallery-7" />
                             </a>
-                            <a class="overlay" href="images/temp-images/gallery-7.jpg"></a>
+                            <a class="overlay" href="{% static 'images/temp-images/gallery-7.jpg' %}"></a>
                         </figure>
                         <div class="content clearfix">
-                            <h4><a href="gallery-single-staff.html">Well Trained Staff</a></h4>
+                            <h4><a href="">Well Trained Staff</a></h4>
 
                             <div class="gallery-item-types">
                                 <a href="#">Patient Care</a>,

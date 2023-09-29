@@ -7,7 +7,7 @@
 
 <!--banner-->
 <div class="banner clearfix"></div>
-<div class="page-top clearfix">
+{% comment %} <div class="page-top clearfix">
     <!--page main heading-->
     <div class="container">
         <h1 class="entry-title">Contact</h1>
@@ -18,7 +18,7 @@
             </ul>
         </nav>
     </div>
-</div>
+</div> {% endcomment %}
 
 <div class="contact-page clearfix">
     <div class="container">
@@ -40,7 +40,7 @@
         <!--contact form-->
         <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-6 ">
-                <form id="contact_form" class="contact-form" action="http://html.inspirydemos.com/medicalpress/contact_form_handler.php" method="post">
+                <form id="contact_form" class="contact-form" action="" method="post">
                     <input type="text" name="name" id="name" class="required" placeholder="Full Name" title="* Please provide your name">
                     <input type="text" name="email" id="email" class="required email" placeholder="Email Address" title="* Please provide a valid email address">
                     <input type="text" name="number" id="number" placeholder="Phone Number">
@@ -48,7 +48,7 @@
                     <input type="hidden" name="nonce" value="">
                     <textarea name="message" id="message" class="required" cols="30" rows="5"  placeholder="Message" title="* Please provide your message"></textarea>
                     <input id="contact-form-submit" class="form-submit-btn" type="submit" value="SUBMIT">
-                    <img src="images/loader.gif" id="contact-loader" class="ajax-loader" alt="Loading...">
+                    <img src="{% static 'images/loader.gif' %}" id="contact-loader" class="ajax-loader" alt="Loading...">
                     <div id="error-container"></div>
                     <div id="response-container"></div>
                 </form>

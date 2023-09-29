@@ -5,7 +5,7 @@
 {% block content %}
 
 <div class="banner clearfix"></div>
-<div class="page-top clearfix">
+{% comment %} <div class="page-top clearfix">
     <!--page main heading-->
     <div class="container">
         <h1 class="entry-title">Make an Appointment</h1>
@@ -15,7 +15,7 @@
             </ul>
         </nav>
     </div>
-</div>
+</div> {% endcomment %}
 
 
 <div class="appoint-page clearfix">
@@ -32,8 +32,8 @@
 
                 <!--appointment form-->
                 <div class="appoint-section clearfix">
-                    <div class="top-icon"><img src="images/appoint-form-top.png" alt=""/></div>
-                    <form id="appointment_form_main" action="http://html.inspirydemos.com/medicalpress/appointment_form_handler.php" method="post">
+                    <div class="top-icon"><img src="{% static 'images/appoint-form-top.png' %}" alt=""/></div>
+                    <form id="appointment_form_main" action="" method="post">
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" name="name" id="app-name" class="required" placeholder="Name" title="* Please provide your name"/>
@@ -55,7 +55,7 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <img src="images/loader.gif" class="ajax-loader" id="appointment-loader" alt="Loading...">
+                                <img src="{% static 'images/loader.gif' %}" class="ajax-loader" id="appointment-loader" alt="Loading...">
                                 <input type="submit" name="Submit" class="appointment-button form-submit-btn" value="Submit Request"/>
                             </div>
                             <div class="col-md-12">
